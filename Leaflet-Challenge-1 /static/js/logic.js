@@ -111,7 +111,7 @@ for (var i = 0; i < updatedAt2.length; i++) {
         //   This will make our marker's size proportionate to its population
     
                 radius: (mageretys * 5)
-            }).addTo(myMap) 
+            }).bindPopup("<h1>" + placeys[i] + "</h1> <hr> <h3>" + timeys[i] + "</h3>").addTo(myMap) 
         } else if (mageretys > 1 && mageretys < 2){
 
             L.circleMarker(cord, {
@@ -125,7 +125,7 @@ for (var i = 0; i < updatedAt2.length; i++) {
         //   This will make our marker's size proportionate to its population
         
             radius: (mageretys * 5)
-        }).addTo(myMap) 
+        }).bindPopup("<h1>" + placeys[i] + "</h1> <hr> <h3>" + timeys[i] + "</h3>").addTo(myMap) 
         } else if (mageretys > 2 && mageretys < 3)
             {
 
@@ -141,7 +141,7 @@ for (var i = 0; i < updatedAt2.length; i++) {
             //   This will make our marker's size proportionate to its population
             
             radius: (mageretys * 5)
-        }).addTo(myMap); 
+        }).bindPopup("<h1>" + placeys[i] + "</h1> <hr> <h3>" + timeys[i] + "</h3>").addTo(myMap); 
         } else if (mageretys > 3 && mageretys < 4){
 
             L.circleMarker(cord, {
@@ -156,7 +156,7 @@ for (var i = 0; i < updatedAt2.length; i++) {
                 //   This will make our marker's size proportionate to its population
         
                 radius: (mageretys * 5)
-            }).addTo(myMap); 
+            }).bindPopup("<h1>" + placeys[i] + "</h1> <hr> <h3>" + timeys[i] + "</h3>").addTo(myMap); 
         } else if (mageretys > 4 && mageretys < 5){
 
             L.circleMarker(cord, {
@@ -171,7 +171,7 @@ for (var i = 0; i < updatedAt2.length; i++) {
                     //   This will make our marker's size proportionate to its population
                     
             radius: (mageretys * 5)
-        }).addTo(myMap); 
+        }).bindPopup("<h1>" + placeys[i] + "</h1> <hr> <h3>" + timeys[i] + "</h3>").addTo(myMap); 
         } else {
 
             L.circleMarker(cord, {
@@ -185,8 +185,8 @@ for (var i = 0; i < updatedAt2.length; i++) {
         //   This will make our marker's size proportionate to its population
         
                 radius: (mageretys * 5)
-            }).addTo(myMap); }
-        if (i == 5000){ break; }
+            }).bindPopup("<h1>" + placeys[i] + "</h1> <hr> <h3>" + timeys[i] + "</h3>").addTo(myMap); }
+        if (i == 2000){ break; }
     }
   
 })
